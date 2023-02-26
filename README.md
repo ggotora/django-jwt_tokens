@@ -25,7 +25,17 @@ urlpatterns = [
     path('auth/refresh/', TokenRefreshView.as_view(), name="token_refresh" )
 ]
 ```
-5. To blacklist ...in installed apps 
+5. To blacklist ...in installed apps ` 
+    'rest_framework_simplejwt.token_blacklist'`
+6. run migration 
+
+7. In project urls `from rest_framework_simplejwt.views import TokenBlacklistView`
+
+    ``` 
+    urlpattern = [
+        path('api/token/blacklist', TokenBlacklistView.as_view(), name="token_blacklist")
+    ]
+
 
 `
 
