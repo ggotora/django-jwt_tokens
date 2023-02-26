@@ -25,5 +25,7 @@ urlpatterns = [
     path('auth/refresh/', TokenRefreshView.as_view(), name="token_refresh" )
 ]
 ```
+5. To blacklist ...in installed apps 
 
+`
 
